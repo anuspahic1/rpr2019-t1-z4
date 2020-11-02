@@ -25,6 +25,10 @@ assertTrue(a);
 
     @Test
     void izbaciArtiklSKodom(){
+        Korpa korpa=new Korpa();
+        korpa.dodajArtikl(new Artikl("sladoled", 78,"999"));
+        Artikl art=korpa.izbaciArtiklSaKodom("999");
+        assertEquals("999",art.getKod());
 
     }
 
